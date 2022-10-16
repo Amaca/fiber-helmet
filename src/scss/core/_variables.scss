@@ -1,0 +1,66 @@
+//css vars
+:root {
+}
+
+//gutter
+$spacing-xl: 80px;
+$spacing-l: 60px;
+$spacing-m: 40px;
+$spacing-s: 20px;
+$spacing-xs: 10px;
+$spacing-xxs: 5px;
+
+//font size
+$font-main: 18px;
+$font-rem: 18;
+
+$body-font-size: 18;
+$font-18: 1rem;
+$font-16: pxrem(16);
+$font-14: pxrem(14);
+$font-12: pxrem(12);
+
+//colors
+$white:      #ffffff;
+$orange:     #751904;
+$blue:       #00294d;
+$dark-blue:  #071218;
+$deep-blue:  #171c22;
+$grey:       #b9b9b9;
+$light-grey: #ebebeb;
+$dark-grey:  #37383a;
+$dark:       #2a2b2e;
+$black:      #000000;
+
+//elements
+$header-height: 130px;
+$header-height-m: 94px;
+
+//animations
+$expo: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+$smooth: cubic-bezier(0, 0.97, 0.43, 1);
+
+//grid
+$grid-columns: 12 !default;
+$grid-gutter-widths: (
+	xs: 30px,
+	sm: 30px,
+	md: 30px,
+	lg: 30px,
+	xl: 30px) !default;
+$grid-breakpoints: (
+	xs: 0,
+	sm: 768px,
+	md: 1024px,
+	lg: 1240px,
+	xl: 1470px) !default;
+$container-max-widths: (
+	sm: calc(100% - 30px),
+	md: calc(100% - 30px),
+	lg: 1240px,
+	xl: 1470px) !default; 
+$container-fluid-max-widths: (
+	sm: calc(100% - 60px),
+	md: calc(100% - 60px),
+	lg: calc(100% - 60px),
+	xl: 1800px) !default; 

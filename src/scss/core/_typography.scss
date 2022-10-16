@@ -1,0 +1,75 @@
+@import "mixins";
+@import "variables";
+
+@font-face {
+    font-family: 'PP Radio Grotesk';
+    src: url('../static/font/PPRadioGrotesk-Black.woff2') format('woff2'),
+        url('../static/font/PPRadioGrotesk-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Radio Grotesk';
+    src: url('../static/font/PPRadioGrotesk-BlackItalic.woff2') format('woff2'),
+        url('../static/font/PPRadioGrotesk-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Radio Grotesk';
+    src: url('../static/font/PPRadioGrotesk-Regular.woff2') format('woff2'),
+        url('../static/font/PPRadioGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Radio Grotesk';
+    src: url('../static/font/PPRadioGrotesk-Ultralight.woff2') format('woff2'),
+        url('../static/font/PPRadioGrotesk-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Radio Grotesk';
+    src: url('../static/font/PPRadioGrotesk-UltralightItalic.woff2') format('woff2'),
+        url('../static/font/PPRadioGrotesk-UltralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Radio Grotesk';
+    src: url('../static/font/PPRadioGrotesk-RegularItalic.woff2') format('woff2'),
+        url('../static/font/PPRadioGrotesk-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+//typo
+body,
+html {
+    font-family: 'PP Radio Grotesk';
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}

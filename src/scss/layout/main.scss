@@ -1,0 +1,28 @@
+@import "../core/mixins";
+@import "../core/variables";
+
+main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	.logo {
+		position: absolute;
+		z-index: 3;
+		top: 27px;
+		left: 27px;
+		display: inline-block;
+		font-size: pxrem(24);
+		text-transform: uppercase;
+		font-style: italic;
+		font-weight: 600;
+		color: $white;
+		pointer-events: all;
+		cursor: pointer;
+		mix-blend-mode: difference;
+	}
+
+    .social {
+        
+    }
+}

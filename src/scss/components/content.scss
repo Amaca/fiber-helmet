@@ -1,0 +1,17 @@
+@import "../core/mixins";
+@import "../core/variables";
+
+.content {
+    font-size: pxrem(60);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: pxrem(2.55);
+    color: white;
+    text-transform: uppercase;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    touch-action: manipulation;
+}

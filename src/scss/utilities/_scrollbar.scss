@@ -1,0 +1,37 @@
+@mixin scrollbar() {
+
+	&::-webkit-scrollbar {
+		width: 6px;
+		border-radius: 3px;
+	}
+
+	&::-webkit-scrollbar-button {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-button:hover {
+		display: none;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba(#555555, 0.7);
+		box-shadow: none;
+		border-radius: 3px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba(#555555, 0.4);
+			cursor: pointer;
+		}
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+		border-radius: 3px;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+
+}
