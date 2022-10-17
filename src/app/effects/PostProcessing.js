@@ -6,8 +6,8 @@ export default function PostProcessing() {
     return (
         <>
             <EffectComposer multisampling={1}>
-                <Bloom kernelSize={3} luminanceThreshold={0} luminanceSmoothing={0.4} intensity={1} />
-                <NoisePost opacity={0.03} />
+                <Bloom kernelSize={3} luminanceThreshold={0} luminanceSmoothing={0.2} intensity={1} />
+                <NoisePost opacity={0.022} />
                 <Vignette eskil={false} offset={0.1} darkness={0.7} />
             </EffectComposer>
         </>
