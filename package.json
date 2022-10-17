@@ -22,6 +22,7 @@
         "@react-three/drei": "8.12.0",
         "@react-three/fiber": "^7.0.9",
         "@react-three/postprocessing": "^2.6.2",
+        "copy-webpack-plugin": "^6.0.1",
         "framer-motion": "^6.0.0",
         "framer-motion-3d": "^6.0.0",
         "gsap": "^3.11.3",

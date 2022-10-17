@@ -2,14 +2,15 @@
 @import "../core/variables";
 
 .modal {
-    position: fixed;
-    z-index: 2;
-    top: 0;
+    position: relative;
+    top: -60px;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     pointer-events: none;
-    padding: pxrem(40);
+    opacity: 0;
+    transition: all .6s $smooth 1.8s;
 
     &-panel {
         position: fixed;
@@ -36,8 +37,8 @@
         pointer-events: all;
         border-radius: 50%;
         background: $white;
-        width: pxrem(40);
-        height: pxrem(40);
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -94,5 +95,14 @@
             opacity: 1;
             pointer-events: all;
         }
+    }
+}
+
+
+#root._loaded {
+    
+    .modal {
+        top: 0;
+        opacity: 1;
     }
 }

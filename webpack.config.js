@@ -2,6 +2,7 @@ const path = require('path');
 const htmlWebpack = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -66,6 +67,11 @@ module.exports = {
     plugins: [
         new htmlWebpack({
             template: './src/index.html',
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, './static'), to: './static' }
+            ]
         }),
         new MiniCSSExtractPlugin({
             filename: './[name].css',

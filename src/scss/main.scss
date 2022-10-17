@@ -9,9 +9,10 @@
 @import "./core/base";
 @import "./core/typography";
 
-@import "./layout/main";
 @import "./layout/section";
 @import "./layout/footer";
 
+@import "./components/logo";
 @import "./components/content";
 @import "./components/modal";
+@import "./components/social";

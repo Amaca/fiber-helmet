@@ -5,25 +5,26 @@ export default function Social() {
     return (
         <div className="social">
             <div className="social-content">
+                <span>FIND ME</span>
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/amacuzza/" target="_blank" title="instagram">
-                            <svg class="ico"><use xlink:href="#ico-instagram"></use></svg>
+                            <img src="./static/svg/instagram.svg"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/carletti.m/" target="_blank" title="facebook">
-                            <svg class="ico"><use xlink:href="#ico-facebook"></use></svg>
+                        <img src="./static/svg/facebook.svg"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/Amaca" target="_blank" title="twitter">
-                            <svg class="ico"><use xlink:href="#ico-twitter"></use></svg>
+                        <img src="./static/svg/twitter.svg"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Amaca" target="_blank" title="github">
-                            <svg class="ico"><use xlink:href="#ico-github"></use></svg>
+                        <img src="./static/svg/github.svg"/>
                         </a>
                     </li>
                 </ul>

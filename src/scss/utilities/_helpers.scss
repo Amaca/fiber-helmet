@@ -1,15 +1,5 @@
 @use "sass:math";
 
-@mixin font($style: regular) {
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-
-    @if $style==regular {
-        font-family: 'Roboto', sans-serif;
-    }
-}
-
 @function pxrem($pixels) {
     @return #{math.div($pixels, $body-font-size)}rem;
 }

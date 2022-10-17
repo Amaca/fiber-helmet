@@ -1,11 +1,11 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { gsap, Expo } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ModalContent from './ModalContent'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export default function Hud() {
+export default function Modal() {
 
     const [closed, openModal] = useState(true);
 

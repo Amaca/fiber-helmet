@@ -2,14 +2,6 @@
 :root {
 }
 
-//gutter
-$spacing-xl: 80px;
-$spacing-l: 60px;
-$spacing-m: 40px;
-$spacing-s: 20px;
-$spacing-xs: 10px;
-$spacing-xxs: 5px;
-
 //font size
 $font-main: 18px;
 $font-rem: 18;
@@ -22,19 +14,7 @@ $font-12: pxrem(12);
 
 //colors
 $white:      #ffffff;
-$orange:     #751904;
-$blue:       #00294d;
-$dark-blue:  #071218;
-$deep-blue:  #171c22;
-$grey:       #b9b9b9;
-$light-grey: #ebebeb;
-$dark-grey:  #37383a;
-$dark:       #2a2b2e;
 $black:      #000000;
-
-//elements
-$header-height: 130px;
-$header-height-m: 94px;
 
 //animations
 $expo: cubic-bezier(1.000, 0.000, 0.000, 1.000);
