@@ -30,7 +30,7 @@ export default function Scene() {
                     </Scroll>
                 </ScrollControls>
             </PerspectiveCamera>
-            {/* <PostProcessing/> */}
+            <PostProcessing/>
             {/* <OrbitControls/> */}
         </Canvas>
     )
