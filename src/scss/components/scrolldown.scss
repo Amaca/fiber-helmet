@@ -26,6 +26,12 @@
     }
 }
 
+.modal._open + .scrolldown {
+    span {
+        bottom: -15px;
+    }
+}
+
 #root._loaded {
 	
 	.scrolldown {

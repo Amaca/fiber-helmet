@@ -15,8 +15,8 @@ export default function App() {
                 <Scene />
             </div>
             <Modal />
-            <Social />
             <div className="scrolldown"><span>SCROLL</span></div>
+            <Social />
             <Loader />
             <Leva collapsed={true} hidden />
         </main>
