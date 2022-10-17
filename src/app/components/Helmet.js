@@ -2,37 +2,43 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useLoader, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Scroll, useScroll } from '@react-three/drei'
-import gsap, { Power2 } from 'gsap';
+import gsap, { Expo } from 'gsap';
 
 export default function Helmet(props) {
     const gltf = useLoader(GLTFLoader, "./static/models/helmet/glTF/helmet.gltf");
     const ref = useRef();
     const data = useScroll();
     const [notScrollable, setScrollable] = useState(true);
+    const root = document.querySelector('#root');
+    const scrollDown = document.querySelector('.scrolldown');
 
     function callBackAnimation() {
-        setScrollable(!notScrollable)
+        root.classList.add('_scroll');
+        setScrollable(!notScrollable);
     }
 
     useEffect(() => {
-        // gsap.to(ref.current.position, {
-        //     x: 0,
-        //     y: 5,
-        //     z: -2,
-        //     duration: 1.5,
-        //     ease: Power2.easeInOut,
-        //     onComplete: callBackAnimation
-        // })
-
-        // gsap.to(ref.current.rotation, {
-        //     x: 0,
-        //     duration: 1.5,
-        //     ease: Power2.easeInOut
-        // })
+        ref.current.position.set(0, -6, 7);
+        ref.current.rotation.set(0.6, 0, 0);
+        gsap.to(ref.current.position, {
+            x: 0,
+            y: 0,
+            z: 0,
+            duration: 2,
+            ease: Expo.easeOut,
+            onComplete: callBackAnimation
+        })
+        gsap.to(ref.current.rotation, {
+            x: 0,
+            y: 0,
+            z: 0,
+            duration: 2,
+            ease: Expo.easeOut
+        })
     }, [])
 
     useFrame(() => {
-        //if(notScrollable) return;
+        if(notScrollable) return;
         const a = data.range(0, 1)
         if (a < 0.848) {
             ref.current.position.y = -a * 18.6;
@@ -44,6 +50,8 @@ export default function Helmet(props) {
             ref.current.position.z = ref.current.position.z;
             ref.current.rotation.y = ref.current.rotation.y;
         }
+
+        a > 0.1 ? scrollDown.classList.add('_off') : scrollDown.classList.remove('_off')
     });
 
     return (

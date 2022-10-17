@@ -12,7 +12,7 @@
         z-index: 1;
         width:50%;
         top: 50%;
-        transform: translateY(-50%)
+        transform: translateY(-50%);
     }
 
     &._left {
@@ -20,6 +20,16 @@
             text-align: right;
             padding: 2rem 5vw 2rem 0;
             right: 0;
+
+            @include media-down(sm) {
+                text-align: center;
+                padding: 0 30px;
+                right: 0;
+                width: 100%;
+                top: 0;
+                bottom: auto;
+                transform: none;
+            }
         }
     }
 
@@ -28,26 +38,15 @@
             text-align: left;
             padding: 2rem 0 2rem 5vw;
             left: 0;
-        }
-    }
 
-    &._hero {
-        
-        .scroll {
-            position: absolute;
-            z-index: 2;
-            left: 50%;
-            bottom: 80px;
-            transform: translateY(-50%);
-            overflow: hidden;
-
-            span {
-                display: block;
+            @include media-down(sm) {
+                text-align: center;
+                padding: 0 30px;
+                right: 0;
+                width: 100%;
                 top: 0;
-                position: relative;
-                font-size: pxrem(16);
-                color: $white;
-                font-weight: 500;
+                bottom: auto;
+                transform: none;
             }
         }
     }

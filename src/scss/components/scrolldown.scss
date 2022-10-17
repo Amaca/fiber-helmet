@@ -1,0 +1,35 @@
+@import "../core/mixins";
+@import "../core/variables";
+
+.scrolldown {
+    position: absolute;
+    z-index: 2;
+    bottom: -33px;
+    right: 21px;
+    color: $white;
+    font-size: pxrem(16);
+    overflow: hidden;
+    opacity: 0;
+    transition: all .6s $smooth 1.8s;
+
+    span {
+        position: relative;
+        bottom: 0;
+        transition: all .4s $smooth;
+    }
+
+    &._off {
+
+        span {
+            bottom: -15px;
+        }
+    }
+}
+
+#root._loaded {
+	
+	.scrolldown {
+		bottom: 33px;
+		opacity: 1;
+	}
+}

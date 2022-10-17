@@ -61,6 +61,12 @@ html {
     font-family: 'PP Radio Grotesk';
     line-height: 1.2;
     font-weight: 500;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    touch-action: manipulation;
 }
 
 h1,

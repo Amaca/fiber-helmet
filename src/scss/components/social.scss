@@ -18,6 +18,11 @@
         overflow: hidden;
         transition: .6s all $smooth;
 
+        @include media-down(sm) {
+            background: $white;
+            width: 111px;
+        }
+
         &:after {
             content: '';
             position: absolute;
@@ -41,6 +46,10 @@
             transition: .6s all $smooth;
             text-transform: uppercase;
             font-weight: 700;
+
+            @include media-down(sm) {
+                transform: translateX(-50px);
+            }
         }
 
         ul {
@@ -58,6 +67,10 @@
             transform: translateY(-50%);
             transition: .6s all $smooth;
             line-height: 0;
+
+            @include media-down(sm) {
+                right: 10px;
+            }
 
             li {
                 padding: 0 4px;

@@ -19,12 +19,10 @@ export default function Scene() {
                 <Background />
                 <ScrollControls damping={5} pages={3.5} distance={1}>
                     <Suspense fallback={<Loading />}>
-                        <Helmet
+                        <Helmet 
                             scale={1}
                             position={[0, 0, -3]}
-                            rotation={
-                                [0, 0, 0]
-                            }
+                            rotation={[0, 0, 0]}
                         />    
                     </Suspense>
                     <Scroll html style={{ width: '100%' }}>
@@ -32,7 +30,7 @@ export default function Scene() {
                     </Scroll>
                 </ScrollControls>
             </PerspectiveCamera>
-            <PostProcessing/>
+            {/* <PostProcessing/> */}
             {/* <OrbitControls/> */}
         </Canvas>
     )

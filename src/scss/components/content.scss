@@ -8,10 +8,8 @@
     letter-spacing: pxrem(2.55);
     color: white;
     text-transform: uppercase;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    touch-action: manipulation;
+
+    @include media-down(sm) {
+        font-size: pxrem(30)
+    }
 }

@@ -19,6 +19,7 @@ body,
 	height: 100%;
 	padding: 0;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 body {
@@ -33,6 +34,16 @@ body {
 
 	&._loaded {
 		opacity: 1;
+	}
+
+	&._scroll {
+		.scene {
+			> div {
+				> div {
+					overflow: hidden auto !important;
+				}
+			}
+		}
 	}
 }
 
@@ -58,6 +69,7 @@ main {
 	
 	> div {
 		> div {
+			overflow: hidden !important;
 			@include scrollbar();
 		}
 	}
